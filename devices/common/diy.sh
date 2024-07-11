@@ -34,6 +34,8 @@ rm -rf package/feeds/packages/v4l2loopback
 
 mv -f feeds/kiddin9/r81* tmp/
 
+curl -sfL https://raw.githubusercontent.com/openwrt/packages/master/lang/golang/golang/Makefile -o feeds/packages/lang/golang/golang/Makefile
+
 sed -i "s/192.168.1/10.0.0/" package/feeds/kiddin9/base-files/files/bin/config_generate
 sed -i "s/192.168.1/10.0.0/" package/base-files/files/bin/config_generate
 
