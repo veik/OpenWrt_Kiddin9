@@ -37,7 +37,7 @@ rm -rf kernel libs/libpfring libs/xr_usb_serial_common
 git_clone_path master https://github.com/openwrt/packages kernel libs/libpfring libs/xr_usb_serial_common
 cd ../../
 
-curl -sfL https://raw.githubusercontent.com/openwrt/packages/master/net/xtables-addons/patches/201-fix-lua-packetscript.patch -o package/feeds/packages/xtables-addons/patches/201-fix-lua-packetscript.patch
+curl -sfL https://raw.githubusercontent.com/openwrt/packages/master/net/xtables-addons/patches/200-add-lua-packetscript.patch -o package/feeds/packages/xtables-addons/patches/200-add-lua-packetscript.patch
 
 curl -sfL https://raw.githubusercontent.com/openwrt/packages/master/net/coova-chilli/patches/011-kernel517.patch -o package/feeds/packages/coova-chilli/patches/011-kernel517.patch
 
